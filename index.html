@@ -7,9 +7,10 @@ body {
     opacity: 0.8;
     background-image: linear-gradient(#f5e1d0 1px, transparent 0.5px), linear-gradient(to right, #f5e1d0 1px, #f7f0e5 0.5px);
     background-size: 20px 20px;
+    font-family:'Times New Roman', Times, serif;
 }
 h1 {
-    font-size: 12vh;
+    font-size: 75px;
     color: #b31616;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -17,35 +18,57 @@ h1 {
     user-select: none;
 }
 h2 {
-    font-size: 2.5vh;
+    font-size: 18px;
     font-family:'Times New Roman', Times, serif;
-    color: #6a452e;
+    color: #883a0a;
     text-align: center;
     margin: 0;
     user-select: none;
     font-weight: 400;
 }
+h3 {
+    font-size: 28px;
+    color: #812312;
+    background-color: #ffe9b0;
+    margin-bottom: 10px;
+}
 h4 {
     font-size: 3px;
 }
+h5 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #a05527;
+}
 p {
-    font-size: 2.5vh;
-    font-family:'Times New Roman', Times, serif;
-    color: #642f0e;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #874115;
     text-align: left;
-    padding: 5px;
+    padding: 3px;
+}
+br {
+    user-select: none;
 }
 mark {
-    color: #c53b3b;
+    color: #2c0101;
 }
 .divider {
-    background-color: #703e1f;
+    background-color: #9f4a15;
+}
+.layout {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    background-color: #f9deb3;
 }
 .content {
     background-color: #ffffff;
-    opacity: 99%;
-    padding: 3px;
+    opacity: 100%;
+    padding: 8px;
     margin: 10px;
+    border: solid 3px #db9061;
+    border-radius: 3px;
 }
 
 </style>
@@ -57,12 +80,33 @@ mark {
     <h1><i>chem.quest</i></h1>
     <h2><i>for quick last-minute chem study sessions</i></h2>
 <br>
-<div class="divider"><h4>hi</h4></div>
-<div class="content">
-    <p>having trouble memorizing the key concepts </p>
-    <p>unit 1</p>
-    <p>unit 2</p>
-    <p>unit 3</p>
-</div>
 
+<div class="layout">
+    <div class="content" style="margin-right: 0; max-width: 650px;">
+        <h3>Welcome to Chem-quest!</h3>
+        <p>ChemQuest is a small website made to <b>help students with high-school level chemistry.</b>
+            With the recent developments of <b>generative AI,</b>
+            human-made resources are <b>becoming more difficult to find.</b>
+            ChemQuest aims to stand as a reliable, easy-to-understand resource
+            for students struggling with chemistry.</p>
+        <br>
+        <p><b>Created for chem students, by a chem student.</b> This site was inspired by study guide docs
+            shared among my friends during ALP classes,
+            as well as retro note-taking apps from the 2010s.
+        </p>
+    </div>
+    <div class="content" style="max-width: 200px;">
+        <h5>Table of Contents</h5>
+        <br><a href="">Unit 1 Notes</a>
+        <br><a href="">Unit 2 Notes</a>
+        <br><a href="">Unit 3 Notes</a>
+        <br><a href="">Unit 4 Notes</a>
+        <br><a href="">Unit 5 Notes</a>
+    </div>
+</div>
+<div style="display: flex; justify-content: center; text-align: center;">
+    <div class="content" style="width: 833px; text-align: center;">
+        <p>hello, what brings you here today? i hope you have a great time here :)</p>
+    </div>
+</div>
 </body>
