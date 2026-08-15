@@ -5,7 +5,7 @@
 <style>
 
 body {
-    background-color: blanchedalmond;
+    background-color: rgb(255, 245, 229);
     opacity: 0.8;
     background-image: linear-gradient(#f5e1d0 1px, transparent 0.5px), linear-gradient(to right, #f5e1d0 1px, #f7f0e5 0.5px);
     background-size: 20px 20px;
@@ -41,22 +41,28 @@ h4 {
 h5 {
     font-weight: bold;
     font-size: 20px;
-    color: #a05527;
+    color: #812312;
     margin-top: 0;
 }
 p {
     font-size: 16px;
-    font-family: 'Trebuchet MS', sans-serif;
     color: #874115;
     text-align: left;
     padding: 3px;
     margin: 0;
+}
+a {
+    color: #b41f1f;
+}
+a:active, a:hover{
+    color: #f76767;
 }
 br {
     user-select: none;
 }
 mark {
     color: #2c0101;
+    background-color:#ffe9b0;
 }
 .divider {
     background-color: #9f4a15;
@@ -72,8 +78,8 @@ mark {
     opacity: 100%;
     padding: 8px;
     margin: 10px;
-    border: solid 3px #db9061;
-    border-radius: 3px;
+    border: double 7px #bd7040;
+    border-radius: 2px;
 }
 
 </style>
@@ -90,27 +96,45 @@ mark {
     <div class="content" style="margin-right: 0; max-width: 650px;">
         <h3>Welcome to Chem-quest!</h3>
         <p>ChemQuest is a small website made to <b>help students with high-school level chemistry.</b>
-            With the recent developments of <b>generative AI,</b>
+            With the recent developments of generative AI,
             human-made resources are <b>becoming more difficult to find.</b>
             ChemQuest aims to stand as a reliable, easy-to-understand resource
-            for students struggling with chemistry.</p>
-        <p><b>Created for chem students, by a chem student.</b> This site was inspired by study guide docs
+            for students struggling with chemistry. Many online studying websites nowadays are quick cash-grabs that
+            want to make a couple bucks off struggling students; but studying materials should be available to everyone,
+            not from vibe-coded cash grabs.</p>
+        <br>
+            <p><b>Created for chem students, by a chem student.</b> This site was inspired by study guide docs
             shared among my friends during ALP classes,
             as well as retro note-taking apps from the 2010s.
         </p>
     </div>
     <div class="content" style="max-width: 200px;">
         <h5>Table of Contents</h5>
-        <a href="">Unit 1 Notes</a>
-        <br><a href="">Unit 2 Notes</a>
-        <br><a href="">Unit 3 Notes</a>
-        <br><a href="">Unit 4 Notes</a>
-        <br><a href="">Unit 5 Notes</a>
+        <br>
+        <p><b>Grade 10</b></p>
+        <ul>
+            <li><a href="">Grade 10 Notes</a></li>
+        </ul>
+        <br>
+        <p><b>Grade 11</b></p>
+        <ul>
+            <li><a href="">Unit 1 Notes</a></li>
+            <li><a href="">Unit 2 Notes</a></li>
+            <li><a href="">Unit 3 Notes</a></li>
+            <li><a href="">Unit 4 Notes</a></li>
+            <li><a href="">Unit 5 Notes</a></li>
+        </ul>
     </div>
 </div>
-<div style="display: flex; justify-content: center; text-align: center;">
-    <div class="content" style="width: 833px; text-align: center;">
-        <p>hello, what brings you here today? i hope you have a great time here :)</p>
+<div style="display: flex; justify-content: center;">
+    <div class="content" style="width: 845px; border: solid 3px #bd7040;">
+        <h5 style="text-align: center;">Chemistry Fun Facts!</h5>
+        <p>Did you know that...</p>
+        <ul>
+            <li>...the human body is filled with different minerals, such as sodium, potassium, and even gold?</li>
+            <li>...bromine and mercury are the only two natural metals that remain as a liquid at room temperature?</li>
+            <li>...75% of all matter in the wold is composed of hydrogen? <small>(24% is composed of helium, and 1% is everything else!)</small></li>
+        </ul>
     </div>
 </div>
 </body>
