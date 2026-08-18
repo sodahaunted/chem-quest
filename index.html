@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <head>
-    <title>My Page Title</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>[chem.quest]</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.png">
+    <link rel="stylesheet" href="style.css">
 <style>
-
+html {
+    background-color: #ddbb9d;
+}
 body {
     background-color: rgb(255, 245, 229);
-    opacity: 0.8;
-    background-image: linear-gradient(#f5e1d0 1px, transparent 0.5px), linear-gradient(to right, #f5e1d0 1px, #f7f0e5 0.5px);
+    opacity: 100%;
+    background-image: linear-gradient(#ddbb9d 1px, transparent 0.5px), linear-gradient(to right, #ddbb9d 1px, #fce8c8 0.5px);
     background-size: 20px 20px;
     font-family:'Times New Roman', Times, serif;
 }
 h1 {
     font-size: 75px;
-    color: #b31616;
+    color: #c31d1d;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 0;
@@ -23,17 +26,20 @@ h2 {
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
     color: #883a0a;
+    background-color: #fef6e4;
     text-align: center;
-    margin: 0;
+    margin: auto;
+    padding: 1px;
     user-select: none;
-    font-weight: 400;
+    font-weight: 600;
+    max-width: 300px;
 }
 h3 {
     font-size: 28px;
     color: #812312;
-    background-color: #ffe9b0;
+    background-color: #ffe29a;
+    margin: 0;
     margin-bottom: 10px;
-    margin-top: 0;
 }
 h4 {
     font-size: 3px;
@@ -42,7 +48,7 @@ h5 {
     font-weight: bold;
     font-size: 20px;
     color: #812312;
-    margin-top: 0;
+    margin: 0;
 }
 p {
     font-size: 16px;
@@ -62,56 +68,101 @@ br {
 }
 mark {
     color: #2c0101;
-    background-color:#ffe9b0;
+    background-color:#ffdf8d;
+}
+button {
+    margin: 4px;
+    padding: 3px 30px 3px 30px;
+    color: rgb(128, 24, 24);
+    font-weight: 800;
+    background-color: #fecd94;
+    border: solid;
+}
+button:hover {
+    background-color: #f2b26a;
+}
+button:active {
+    color:#c31d1d;
 }
 .divider {
     background-color: #9f4a15;
 }
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .layout {
     display: flex;
     margin: 10px;
-    justify-content: center;
-    background-color: #f9deb3;
+    background-color: #f6c99a;
+    opacity: 100%;
+    flex-direction: row;
+    max-width: 900px;
+    border: dashed 3px #b64c29;
 }
 .content {
-    background-color: #ffffff;
+    background-color: #fff5e1;
     opacity: 100%;
     padding: 8px;
     margin: 10px;
-    border: double 7px #bd7040;
-    border-radius: 2px;
+    border: solid 2.5px #9e4a15;
 }
 
 </style>
 </head>
 
+<html>
 <body>
 
     <br>
     <h1><i>chem.quest</i></h1>
-    <h2><i>for quick last-minute chem study sessions</i></h2>
+    <h2><i>for last-minute chem study sessions</i></h2>
 <br>
 
+<div class="main">
 <div class="layout">
-    <div class="content" style="margin-right: 0; max-width: 650px;">
-        <h3>Welcome to Chem-quest!</h3>
-        <p>ChemQuest is a small website made to <b>help students with high-school level chemistry.</b>
-            With the recent developments of generative AI,
-            human-made resources are <b>becoming more difficult to find.</b>
-            ChemQuest aims to stand as a reliable, easy-to-understand resource
-            for students struggling with chemistry. Many online studying websites nowadays are quick cash-grabs that
-            want to make a couple bucks off struggling students; but studying materials should be available to everyone,
-            not from vibe-coded cash grabs.</p>
-        <br>
-            <p><b>Created for chem students, by a chem student.</b> This site was inspired by study guide docs
-            shared among my friends during ALP classes,
-            as well as retro note-taking apps from the 2010s.
-        </p>
+    <div style="flex-direction: column; justify-content: center; max-width: 750px;">
+        <div class="content">
+            <h3>Welcome to Chem.quest!</h3>
+            <p>ChemQuest is a small website made to <b>help students with high-school level chemistry.</b>
+                With the recent developments of generative AI,
+                human-made resources are <b>becoming more difficult to find.</b>
+                ChemQuest aims to stand as a reliable, easy-to-understand resource
+                for students struggling with chemistry. Many online studying websites nowadays are quick cash-grabs that
+                want to make a couple bucks off struggling students; but studying materials should be available to everyone,
+                not from vibe-coded cash grabs.</p>
+            <br>
+                <p><b>Created for chem students, by a chem student.</b> This site was inspired by study guide docs
+                shared among my friends during ALP classes,
+                as well as retro note-taking apps from the 2010s.
+            </p>
+        </div>
+        <div class="content">
+            <h5 style="text-align: center;">Cool Chemistry Facts</h5>
+            <p><b>Did you know that...</b></p>
+            <ul>
+                <li>...the human body is filled with different minerals, such as sodium, potassium, and even gold?</li>
+                <li>...bromine and mercury are the only two natural metals that remain as a liquid at room temperature?</li>
+                <li>...75% of all matter in the wold is composed of hydrogen? <small>(24% is composed of helium, and 1% is everything else!)</small></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h5 style="text-align: center;">Study Corner</h5>
+            <p>An all-in-one studying corner webpage; including a pomodoro timer, sticky notes, and soothing background noises
+                to help you focus. Customize it to your own preferences, and change the colour/themes to meet your preference.
+                Like a digital corkscrew board!
+            </p>
+            <button>Enter</button>
+        </div>
     </div>
-    <div class="content" style="max-width: 200px;">
-        <h5>Table of Contents</h5>
-        <br>
-        <p><b>Grade 10</b></p>
+<div style="display: flex; flex-direction: column; margin-left: 0;">
+    <div class="content" style="width: 1; margin: 10px 10px 0px 0px;">
+        <p><b>Grade 9</b></p>
+        <ul>
+            <li><a href="">Grade 9 Notes</a></li>
+        </ul>
+        <br><p><b>Grade 10</b></p>
         <ul>
             <li><a href="">Grade 10 Notes</a></li>
         </ul>
@@ -125,16 +176,15 @@ mark {
             <li><a href="">Unit 5 Notes</a></li>
         </ul>
     </div>
-</div>
-<div style="display: flex; justify-content: center;">
-    <div class="content" style="width: 845px; border: solid 3px #bd7040;">
-        <h5 style="text-align: center;">Chemistry Fun Facts!</h5>
-        <p>Did you know that...</p>
-        <ul>
-            <li>...the human body is filled with different minerals, such as sodium, potassium, and even gold?</li>
-            <li>...bromine and mercury are the only two natural metals that remain as a liquid at room temperature?</li>
-            <li>...75% of all matter in the wold is composed of hydrogen? <small>(24% is composed of helium, and 1% is everything else!)</small></li>
-        </ul>
+    <div class="content" style="width: 1; margin: 10px 10px 10px 0px">
+        <h5 style="text-align: center;">Happy Studying!</h5>
+        <p>remember that learning is a journey</p>
+        <br>
+        <p>this site is a wip lol best viewed on desktop</p>
     </div>
 </div>
+</div>
+</div>
+    <br><br><br>
 </body>
+</html>
